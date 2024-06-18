@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Croissant+One&family=Montserrat&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway&family=Rubik&display=swap');
+
+body {
+  background-color: black;
+  color: cyan;
+  height: 400%;
+  overflow: scroll;
+}
+
+h1 {
+  text-align: center;
+  font-size: 5em;
+  font-family: Poppins;
+  margin-top: 30vh;
+  margin-bottom: -2vh;
+  animation-name: fade_up;
+  animation-duration: 2s;
+}
+
+h2 {
+  text-align: center;
+  padding-top: 15px;
+  font-size: 2em;
+  font-family: Poppins;
+  animation-name: appear_left_to_right;
+  animation-duration: 4s;
+}
+
+h3 {
+  text-align: center;
+  padding-top: 15px;
+  font-size: 4em;
+  font-family: Poppins;
+  animation-name: appear_left_to_right;
+  animation-duration: 4s;
+}
+
+@keyframes fade_up {
+  0% {transform: translateY(3vh);  opacity: 0;}
+  100% {transform: translateY(0vh); opacity: 1;}
+}
+
+@keyframes appear_left_to_right {
+  0% {max-width: 0%; overflow: hidden; white-space: nowrap;}
+  50% {max-width: 0%; overflow: hidden; white-space: nowrap;}
+  100% {max-width: 100%; overflow: hidden; white-space: nowrap;}
+}
+
+.navbar {
+  position: fixed; /* Fix the navbar at the top of the viewport */
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: cyan; /* Background color for the navbar */
+  padding: 10px 20px; /* Adjust padding as needed */
+  z-index: 1000; /* Ensure navbar stays on top of other content */
+  font-family: Poppins;
+}
+
+.navbar ul {
+  list-style-type: none;
+}
+
+.navbar ul li {
+  display: inline;
+}
+
+.navbar ul li a {
+  color: black;
+  text-decoration: none;
+  padding: 10px 20px; /* Adjust padding as needed */
+}
+
+.navbar ul li a:hover {
+  background-color: darkcyan; /* Background color on hover */
+}
+
+/* Style for the content */
+.content {
+  margin-top: 60px; /* Adjust according to the navbar height */
+  /* Other styles for your content */
+}
+
+p {
+    text-align: center;
+    font-size: 3em;
+    font-family: Poppins;
+    animation-name: fade_up;
+    animation-duration: 2s;
+}
+
+#button_container {
+    text-align: center;
+}
+
+  .buts {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #2c908d;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin: 10px;
+    transition: background-color 0.3s ease;
+    font-family: Poppins;
+  }
+  
+  .buts:hover {
+    background-color: rgb(69, 101, 160);
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+  section {
+    padding-top: 60px; /* Adjust according to the navbar height */
+  }
